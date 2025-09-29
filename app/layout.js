@@ -12,19 +12,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Noah Sacré",
-  description: "what if i loved you back?",
+  title: "Earth Time",
+  description: "who do you wanna be?",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="h-full">
-      <head>
-        {/* Viewport for responsive design */}
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* Theme color for mobile address bar */}
-        <meta name="theme-color" content="#fff7e4" />
-      </head>
+    <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ff892b" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#ff892b" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+</head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased h-full`}
       >
